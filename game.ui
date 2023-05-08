@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Game</class>
+ <widget class="QWidget" name="Game">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>860</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>620</width>
+    <height>860</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>620</width>
+    <height>860</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>521</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="middle_gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="TimeUsed_label">
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>231</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Time used:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="StepUsed_label">
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>231</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Step used:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="back_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>820</y>
+     <width>91</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>521</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="up_gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_1">
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>231</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Play 2048 offline!</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QLabel" name="BestScore_label">
+      <property name="minimumSize">
+       <size>
+        <width>256</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>256</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Best:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" rowspan="2">
+     <widget class="QLabel" name="label_2">
+      <property name="minimumSize">
+       <size>
+        <width>220</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>220</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Your Score:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" rowspan="2">
+     <widget class="QPushButton" name="Again_pushButton">
+      <property name="minimumSize">
+       <size>
+        <width>256</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>256</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>重新开始一局！</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="Score_label">
+      <property name="minimumSize">
+       <size>
+        <width>220</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>220</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>300</y>
+     <width>521</width>
+     <height>506</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="down_gridLayout">
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="Eleven_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="Twelve_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="Seven_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="Fifteen_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="Nine_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="Two_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="Eight_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLineEdit" name="Four_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="Fourteen_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="Five_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLineEdit" name="Sixthteen_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="Ten_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="Thirteen_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="One_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="Three_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="Six_lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>96</width>
+        <height>96</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
